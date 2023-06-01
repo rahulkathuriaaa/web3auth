@@ -1,7 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import MyButton from './Button';
-
+import { Buffer } from 'buffer';
+global.Buffer = Buffer;
 export default function App() {
   return (
     <View style={styles.container}>
